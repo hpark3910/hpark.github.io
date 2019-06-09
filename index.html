@@ -1,81 +1,89 @@
+<!DOCTYPE html>
 
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="author" content="Hyunsu Park">
-    <title>Hyunsu Park</title>
+<html>
+	<!-- page title -->
+	<head>
+		<title>Hyunsu Park's Website</title>
+	</head>
 
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
-    <!-- Add icon library -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Add font awesome icons -->
-    <link rel="stylesheet" href="icon.css">
-  </head>
-  <body>
-    <header>
-      <div class="container black">
-        <a href="#" class="fa fa-facebook"></a>
-        <a href="#" class="fa fa-twitter"></a>
-      </div>
-    </header>
+	<!-- the main page -->
+	<body>
+		<!-- contact info -->
+		<h1>Hyunsu Park</h1>
+		<address>
+			<p>
+				<a href="mailto:parkhs1995@gmail.com">
+				parkhs1995@gmail.com
+				</a>
+			</p>
+			<p>
+				<a href="https://github.com/hpark95" target="_blank">
+				github
+				</a>
+			</p>
+			<p>(770)-570-8373</p>
+		</address>
+		<hr />
 
-<main role="main">
-  <section class="jumbotron text-center">
-    <div class="container">
-      <img src="photo.png" alt="profilePhoto" class="rounded mx-auto d-block" width = 300>
-      <h1 class="jumbotron-heading">Hyunsu Park</h1>
-      <p>
-      <div class="container">
-        <div class="row justify-content-md-center">
-          <div class="col col-lg-2">
-            <h4 class="text-muted" data-toggle="collapse" href="#collapseAboutMe" role="button" aria-expanded="false" aria-controls="collapseAboutMe">
-              About me
-            </button>
-          </div>
-          <div class="col-md-auto">
-            <h4 class="text-muted" data-toggle="collapse" href="#collapseEducation" role="button" aria-expanded="false" aria-controls="collapseEducation">
-              Education
-            </button>
-          </div>
-          <div class="col col-lg-2">
-        <h4 class="text-muted" data-toggle="collapse" href="#collapseCV" role="button" aria-expanded="false" aria-controls="collapseCV">
-          CV
-        </button>
-      </div>
-        </div>
-      </div>
-      </p>
-      <div class="collapse" id="collapseAboutMe">
-        <div class="card card-body">
-          Placeholder for About Me
-        </div>
-      </div>
-      <div class="collapse" id="collapseEducation">
-        <div class="card card-body">
-          Placeholder for Education
-        </div>
-      </div>
-      <div class="collapse" id="collapseCV">
-        <div class="card card-body">
-          Place holder for CV
-        </div>
-      </div>
-    </div>
-  </section>
+		<!-- About Me section -->>
+		<h1>About</h1>
+		<img src="images/london_cropped.jpg" alt="profile picture" width="600" height="400" align="right">
+		<blockquote>
+		<em>
+			Code, Cook, and Travel
+		</em>
+		</blockquote>
+		<p>
+			I’m a graduate student who is passionate about applying machine learning to various real world problems. My most recent app applies <em>nonnegative matrix factorization</em> to datasets for <strong>topic modeling</strong>. Right now, I am working on building a web app, which analyzes and lists trending youtube topics and videos.
+		</p>
+		<p>
+			Beside coding, I love cooking and traveling. I always try to cook at least one time a day with fresh ingredients. Also, I am passionate about learning and tasting different wines and cheeses. So far, I have been to South Korea, Japan, China, Taiwan, Thailand, Hungary, Checz Republic, Austria, Spain, Netherlands, the United Kingdom, the United States, and Canada. I am looking forward to visit all the continents in the future!
+		</p>
+		<hr />
 
-</main>
+		<!-- recent projects -->
+		<!-- Nonnegative Matrix Factorization project-->
+		<h1>Nonnegative Matrix Factorization</h1>
+		<h3>Topic Modeling for 2015-2017 News Articles</h3>
+		<table>
+			<tr>
+				<td>Topic 1</td>
+				<td>obama, house, white, president, michelle</td>
+			</tr>
+			<tr>
+				<td>Topic 2</td>
+				<td>clinton, hillary, campaign, email, fbi</td>
+			</tr>
+			<tr>
+				<td>Topic 3</td>
+				<td>trump, donald, president, campaign, cruz</td>
+			</tr>
+			<tr>
+				<td>Topic 4</td>
+				<td>new, york, times, dies, briefing</td>
+			</tr>
+			<tr>
+				<td>Topic 5</td>
+				<td>breitbart, news, milo, cruz, daily</td>
+			</tr>
+		</table>
 
-<!-- <footer class="text-muted">
-  <div class="container">
-    <p class="float-right">
-      <a href="#">Back to top</a>
-    </p>
-  </div>
-</footer> -->
+		<blockquote cite="https://en.wikipedia.org/wiki/Non-negative_matrix_factorization">
+		<p>
+			<em>
+				"<dfn>Non-negative matrix factorization</dfn> is a group of algorithms in multivariate analysis and linear algebra where a matrix V is factorized into two matrices W and H, with the property that all three matrices have no negative elements." 
+			</em> 
+			from Wikipedia
+		</p>
+		</blockquote>
+		<p>
+			Because of its nonnegativity, <abbr title="nonnegative matrix factorization">NMF</abbr> has proven to be successful in various fields including computer vision, recommendation systems, topic modeling, and audio signal processing.
+		</p>
+		<hr />
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+
+		<!-- Youtube Trending project-->
+		<h1>Youtube Trending</h1>
+		<p>Project Description</p>
+	</body>
 </html>
