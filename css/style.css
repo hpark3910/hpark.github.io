@@ -1,0 +1,33 @@
+* {
+	font-family: 'Roboto', sans-serif;
+	font-size: 100%;
+}
+h1 {
+	color: hsla(0,  0%, 0%, 1);
+	font-size: 2em;
+	letter-spacing: 0.05em;
+}
+h2 {
+	font-size: 1.5em;
+}
+h3 {
+	font-size: 1.33em;
+}
+p, table {
+	font-size: 1em;
+	line-height: 1.5em;
+	color: #665544;
+}
+.contact {
+	border: 1px solid #665544;
+	background-color: #efefef;
+	padding: 3px;
+}
+.contents {
+	border: 1px solid #665544;
+	background-color:#efefef;
+	padding: 3px;
+}
+.contents#nmf{
+	font-family: "Times New Roman";
+}

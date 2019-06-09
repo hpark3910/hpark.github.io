@@ -1,89 +1,104 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 	<!-- page title -->
 	<head>
-		<title>Hyunsu Park's Website</title>
+		<title>Hyunsu Park - Website</title>
+		<meta name="description" content="Personal Website of Hyunsu Park">
+		<meta name="keyword" content="Hyunsu Park, personal, website, machine learning, software, engineer, engineering, CSS, HTML, HTML5">
+		<meta name="robots" content="nofollow">
+		<meta http-equiv="author" content="Hyunsu Park">
+		<link href="css/style.css" type=
+		"text/css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 	</head>
 
 	<!-- the main page -->
 	<body>
+		<h1>HP</h1>
+		<h3>Hyunsu Park</h3>
 		<!-- contact info -->
-		<h1>Hyunsu Park</h1>
-		<address>
-			<p>
-				<a href="mailto:parkhs1995@gmail.com">
-				parkhs1995@gmail.com
-				</a>
-			</p>
-			<p>
-				<a href="https://github.com/hpark95" target="_blank">
-				github
-				</a>
-			</p>
-			<p>(770)-570-8373</p>
-		</address>
+		<div class="contact">
+			<address>
+				<p>
+					<a href="mailto:parkhs1995@gmail.com">
+					parkhs1995@gmail.com
+					</a>
+				</p>
+				<p>
+					<a href="https://github.com/hpark95" target="_blank">
+					github
+					</a>
+				</p>
+				<p>(770)-570-8373</p>
+			</address>
+		</div> <!-- end of contact section -->
 		<hr />
 
 		<!-- About Me section -->
-		<h1>About</h1>
-		<img src="images/london_cropped.jpg" alt="profile picture" width="600" height="400" align="right">
-		<blockquote>
-		<em>
-			Code, Cook, and Travel
-		</em>
-		</blockquote>
-		<p>
-			I’m a graduate student who is passionate about applying machine learning to various real world problems. My most recent app applies <em>nonnegative matrix factorization</em> to datasets for <strong>topic modeling</strong>. Right now, I am working on building a web app, which analyzes and lists trending youtube topics and videos.
-		</p>
-		<p>
-			Beside coding, I love cooking and traveling. I always try to cook at least one time a day with fresh ingredients. Also, I am passionate about learning and tasting different wines and cheeses. So far, I have been to South Korea, Japan, China, Taiwan, Thailand, Hungary, Checz Republic, Austria, Spain, Netherlands, the United Kingdom, the United States, and Canada. I am looking forward to visit all the continents in the future!
-		</p>
+		<h2>About</h2>
+		<div class="contents" id="about">
+			<img src="images/london_cropped.jpg" alt="profile picture" width="600" height="400" align="right">
+			<blockquote>
+			<em>
+				Code, Cook, and Travel
+			</em>
+			</blockquote>
+			<p>
+				I’m a graduate teaching assistant at Georgia Tech who is passionate about applying machine learning to various real world problems. My most recent app applies <em>nonnegative matrix factorization</em> to datasets for <strong>topic modeling</strong>. Right now, I am working on building a web app, which analyzes and lists trending youtube topics and videos.
+			</p>
+			<p>
+				Beside coding, I love cooking and traveling. I always try to cook at least one time a day with fresh ingredients. Also, I am passionate about learning and tasting different wines and cheeses. So far, I have been to South Korea, Japan, China, Taiwan, Thailand, Hungary, Checz Republic, Austria, Spain, Netherlands, the United Kingdom, the United States, and Canada. I am looking forward to visit all the continents in the future!
+			</p>
+		</div> <!-- end of about contents section -->
 		<hr />
 
 		<!-- recent projects -->
 		<!-- Nonnegative Matrix Factorization project-->
-		<h1>Nonnegative Matrix Factorization</h1>
-		<h3>Topic Modeling for 2015-2017 News Articles</h3>
-		<table>
-			<tr>
-				<td>Topic 1</td>
-				<td>obama, house, white, president, michelle</td>
-			</tr>
-			<tr>
-				<td>Topic 2</td>
-				<td>clinton, hillary, campaign, email, fbi</td>
-			</tr>
-			<tr>
-				<td>Topic 3</td>
-				<td>trump, donald, president, campaign, cruz</td>
-			</tr>
-			<tr>
-				<td>Topic 4</td>
-				<td>new, york, times, dies, briefing</td>
-			</tr>
-			<tr>
-				<td>Topic 5</td>
-				<td>breitbart, news, milo, cruz, daily</td>
-			</tr>
-		</table>
+		<h2>Nonnegative Matrix Factorization</h2>
+		<div class="contents" id="nmf">
+			<h3>Topic Modeling for 2015-2017 News Articles</h3>
+			<table>
+				<tr>
+					<td>Topic 1</td>
+					<td>obama, house, white, president, michelle</td>
+				</tr>
+				<tr>
+					<td>Topic 2</td>
+					<td>clinton, hillary, campaign, email, fbi</td>
+				</tr>
+				<tr>
+					<td>Topic 3</td>
+					<td>trump, donald, president, campaign, cruz</td>
+				</tr>
+				<tr>
+					<td>Topic 4</td>
+					<td>new, york, times, dies, briefing</td>
+				</tr>
+				<tr>
+					<td>Topic 5</td>
+					<td>breitbart, news, milo, cruz, daily</td>
+				</tr>
+			</table>
 
-		<blockquote cite="https://en.wikipedia.org/wiki/Non-negative_matrix_factorization">
-		<p>
-			<em>
-				"<dfn>Non-negative matrix factorization</dfn> is a group of algorithms in multivariate analysis and linear algebra where a matrix V is factorized into two matrices W and H, with the property that all three matrices have no negative elements." 
-			</em> 
-			from Wikipedia
-		</p>
-		</blockquote>
-		<p>
-			Because of its nonnegativity, <abbr title="nonnegative matrix factorization">NMF</abbr> has proven to be successful in various fields including computer vision, recommendation systems, topic modeling, and audio signal processing.
-		</p>
+			<blockquote cite="https://en.wikipedia.org/wiki/Non-negative_matrix_factorization">
+			<p>
+				<em>
+					"<dfn>Non-negative matrix factorization</dfn> is a group of algorithms in multivariate analysis and linear algebra where a matrix V is factorized into two matrices W and H, with the property that all three matrices have no negative elements." 
+				</em> 
+				from Wikipedia
+			</p>
+			</blockquote>
+			<p>
+				Because of its nonnegativity, <abbr title="nonnegative matrix factorization">NMF</abbr> has proven to be successful in various fields including computer vision, recommendation systems, topic modeling, and audio signal processing.
+			</p>
+		</div> <!-- end of nmf contents section -->
 		<hr />
 
-
 		<!-- Youtube Trending project-->
-		<h1>Youtube Trending</h1>
-		<p>Project Description</p>
+		<h2>Youtube Trending</h2>
+		<div class="contents" id="youtube-trending">
+			<p>Project Description</p>
+		</div> <!-- end of youtube trending section -->
 	</body>
 </html>
