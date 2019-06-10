@@ -8,97 +8,113 @@
 		<meta name="keyword" content="Hyunsu Park, personal, website, machine learning, software, engineer, engineering, CSS, HTML, HTML5">
 		<meta name="robots" content="nofollow">
 		<meta http-equiv="author" content="Hyunsu Park">
-		<link href="css/style.css" type=
-		"text/css" rel="stylesheet">
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
+		<link href="css/style.css" type="text/css" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 	</head>
 
 	<!-- the main page -->
 	<body>
-		<h1>HP</h1>
-		<h3>Hyunsu Park</h3>
 		<!-- contact info -->
-		<div class="contact">
-			<address>
+		<div class="front">
+			<img id="logo" src="images/logo.png" alt ="logo" width="50" height="30">
+			<address id="contacts">
 				<p>
 					<a href="mailto:parkhs1995@gmail.com">
-					parkhs1995@gmail.com
+						Email&nbsp&nbsp
 					</a>
-				</p>
-				<p>
 					<a href="https://github.com/hpark95" target="_blank">
-					github
+						Github
 					</a>
 				</p>
-				<p>(770)-570-8373</p>
+			</address>
+			<p id="name">HYUNSU PARK</p>
+			<p id="current_title">
+				A Graduate Teaching Assistant at <br />
+				Georgia Institute of Technology
+			</p>
+			<address id="links">
+				<p>
+					<a href=#about>
+						About
+					</a>
+					<a href="#projects">
+						Projects
+					</a>
+					<a href="#experience">
+						Experience
+					</a>
+				</p>
 			</address>
 		</div> <!-- end of contact section -->
-		<hr />
+
 
 		<!-- About Me section -->
-		<h2>About</h2>
-		<div class="contents" id="about">
-			<img src="images/london_cropped.jpg" alt="profile picture" width="600" height="400" align="right">
-			<blockquote>
-			<em>
-				Code, Cook, and Travel
-			</em>
-			</blockquote>
+		<div id="about">
+			<hr />
+			<img src="images/london_cropped.jpg" alt="profile picture" width="450" height="300" align="right">
+			<h2>About</h2>
 			<p>
 				I’m a graduate teaching assistant at Georgia Tech who is passionate about applying machine learning to various real world problems. My most recent app applies <em>nonnegative matrix factorization</em> to datasets for <strong>topic modeling</strong>. Right now, I am working on building a web app, which analyzes and lists trending youtube topics and videos.
 			</p>
 			<p>
-				Beside coding, I love cooking and traveling. I always try to cook at least one time a day with fresh ingredients. Also, I am passionate about learning and tasting different wines and cheeses. So far, I have been to South Korea, Japan, China, Taiwan, Thailand, Hungary, Checz Republic, Austria, Spain, Netherlands, the United Kingdom, the United States, and Canada. I am looking forward to visit all the continents in the future!
+				Beside coding, I love cooking. I always try to cook at least three times a week with fresh ingredients. I am also very passionate about traveling. So far, I have been to 13 countries spanning over 3 continents. I am looking forward to visit all the continents in the future!
+			</p>
+			<p>
+				My current research interests include Deep Learning, Natural Language Processing and Tensor Analysis.
 			</p>
 		</div> <!-- end of about contents section -->
-		<hr />
 
 		<!-- recent projects -->
 		<!-- Nonnegative Matrix Factorization project-->
-		<h2>Nonnegative Matrix Factorization</h2>
-		<div class="contents" id="nmf">
-			<h3>Topic Modeling for 2015-2017 News Articles</h3>
-			<table>
-				<tr>
-					<td>Topic 1</td>
-					<td>obama, house, white, president, michelle</td>
-				</tr>
-				<tr>
-					<td>Topic 2</td>
-					<td>clinton, hillary, campaign, email, fbi</td>
-				</tr>
-				<tr>
-					<td>Topic 3</td>
-					<td>trump, donald, president, campaign, cruz</td>
-				</tr>
-				<tr>
-					<td>Topic 4</td>
-					<td>new, york, times, dies, briefing</td>
-				</tr>
-				<tr>
-					<td>Topic 5</td>
-					<td>breitbart, news, milo, cruz, daily</td>
-				</tr>
-			</table>
-
-			<blockquote cite="https://en.wikipedia.org/wiki/Non-negative_matrix_factorization">
-			<p>
-				<em>
-					"<dfn>Non-negative matrix factorization</dfn> is a group of algorithms in multivariate analysis and linear algebra where a matrix V is factorized into two matrices W and H, with the property that all three matrices have no negative elements." 
-				</em> 
-				from Wikipedia
-			</p>
-			</blockquote>
-			<p>
-				Because of its nonnegativity, <abbr title="nonnegative matrix factorization">NMF</abbr> has proven to be successful in various fields including computer vision, recommendation systems, topic modeling, and audio signal processing.
-			</p>
-		</div> <!-- end of nmf contents section -->
+		<div id="projects">
 		<hr />
+		<h2>Projects</h2>
+			<div class="project" id="nmf">
+			<h2>Nonnegative Matrix Factorization for Topic Modeling</h2>
+				<h3>Topic Modeling for 2015-2017 News Articles</h3>
+				<table>
+					<tr>
+						<td>Topic 1</td>
+						<td>obama, house, white, president, michelle</td>
+					</tr>
+					<tr>
+						<td>Topic 2</td>
+						<td>clinton, hillary, campaign, email, fbi</td>
+					</tr>
+					<tr>
+						<td>Topic 3</td>
+						<td>trump, donald, president, campaign, cruz</td>
+					</tr>
+					<tr>
+						<td>Topic 4</td>
+						<td>new, york, times, dies, briefing</td>
+					</tr>
+					<tr>
+						<td>Topic 5</td>
+						<td>breitbart, news, milo, cruz, daily</td>
+					</tr>
+				</table>
+			</div> <!-- end of nmf contents section -->
 
-		<!-- Youtube Trending project-->
-		<h2>Youtube Trending</h2>
-		<div class="contents" id="youtube-trending">
-			<p>Project Description</p>
-		</div> <!-- end of youtube trending section -->
+			<div class="project" id="titanic">
+			<hr />
+			<img src="images/kaggle_titanic.png" alt="kaggle titanic leaderboard" width="450" height="300" align="right">
+			<h2>Kaggle Competition: Titanic Survival Prediction Top 8%</h2>
+			</div> <!-- end of nmf contents section -->
+			
+			<div class="project" id="tilt_shift">
+			<hr />
+			<h2>Miniature Faking</h2>
+			<img src="images/pool_out.jpg" alt="miniature faking of a pool image" width="450" height="300" align="left">
+			</div> <!-- end of nmf contents section -->
+		</div> <!-- end of projects section -->
+		<div id="experience">
+			<hr />
+			<h2> Experience</h2>
+		</div>
 	</body>
 </html>
