@@ -30,10 +30,29 @@ a:hover {
 	color: rgba(256, 156, 0, 0.7);
 }
 
+hr {
+  border: solid #ddd;
+  border-width: 1px 0 0;
+  clear: both;
+  margin: 10% 0% 10% 0%;
+  height: 0; 
+}
+hr.short {
+	margin: 0 0 0 0;
+	width: 10%;
+}
 
 
+/*
 div {
 	margin: 5% 0% 5% 0%;
+}*/
+div.project {
+	margin: 5% 0% 5% 0%;
+	height: 100%;
+	width: 90%;
+	text-align: left;
+	padding: 5% 0% 5% 0%
 }
 
 #name {
@@ -65,12 +84,11 @@ div {
 /*	padding: 0 0px 5px 5px;*/
 }
 
-hr {
-  border: solid #ddd;
-  border-width: 1px 0 0;
-  clear: both;
-  margin: 10% 0% 10% 0%;
-  height: 0; 
+#experience>p {
+	padding: 5% 5% 5% 5%;
+	font-size: 2em;
+	text-align: center;
+	color: rgba(0, 0, 0, 0.7);
 }
 
 /*.contents {
