@@ -111,8 +111,13 @@ ul.internal_links {
 .container.project {
 	width: 100%;
 	height: 450px;
-	padding: 5% 0% 5% 0%;
+	padding: 5% 0% 0% 0%;
 }
+	.container.project#tilt_shift {
+		width: 100%;
+		height: 450px;
+		padding: 5% 0 0% 0;
+	}
 
 .project.text {
 	transition: all 0.5s ease;
@@ -146,19 +151,14 @@ hr.short {
 	width: 15%;
 }
 
-
-
-
-
-#experience>p {
-	padding: 5% 5% 5% 5%;
-	font-size: 2em;
-	text-align: center;
-	color: rgba(0, 0, 0, 0.7);
+/*----- experience styling -----*/
+.container.experience>a {
+	font-size: 1.33em;
+	color: rgba(0, 0, 0, 1);
 }
-
-/*.contents {
-	border: 1px solid #665544;
-	background-color:#efefef;
-	padding: 3px;
-}*/
+.experience.text {
+	margin: 5% auto;
+	font-size: 1.0em;
+	color: black;
+	text-align: left;
+}
