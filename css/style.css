@@ -33,7 +33,7 @@ h3 {
 hr {
   border: solid rgba(0, 0, 0, 0.2);
   border-width: 1px 0 0;
-  height: 0; 
+  height: 0;
 }
 ul {
 	list-style: none;
@@ -62,13 +62,6 @@ Specific Style
 }
 
 /*----- front page styling -----*/
-/*header>h2 {
-	display: inline;
-	font-size: 0.77em;
-	font-weight: normal;
-	color: rgba(0, 0, 0, 0.7);
-	padding: 0 0 1em 0.5em;
-}*/
 ul.contact {
 	padding: 0;
 	margin: 0;
@@ -80,28 +73,118 @@ ul.contact {
 	}
 
 .name {
-	margin: 16% 32% 0% 32%;
-	text-align: left;
+	margin: 16% auto 0% auto;
 	letter-spacing: 0.08em;
 }
+	@media only screen and (min-width: 576px) {
+		.name {
+			width: 90%;
+		}
+	}
+	@media only screen and (min-width: 768px) {
+		.name {
+			width: 70%;
+		}
+	}
+	@media only screen and (min-width: 992px) {
+		.name {
+			width: 50%;
+		}
+	}
+	@media only screen and (min-width: 1200px) {
+		.name {
+			width: 36%;
+		}
+	}
 
 .title {
-	margin: 0.5em 32% 25% 32%;
+	margin: 0.5em auto 25% auto;
 	text-align:left;
 	line-height: 1.5em;
 	font-size: 1.33em;
 }
+	@media only screen and (min-width: 576px) {
+		.title {
+			width: 90%;
+		}
+	}
+	@media only screen and (min-width: 768px) {
+		.title {
+			width: 70%;
+		}
+	}
+	@media only screen and (min-width: 992px) {
+		.title {
+			width: 50%;
+		}
+	}
+	@media only screen and (min-width: 1200px) {
+		.title {
+			width: 36%;
+		}
+	}
 
-ul.internal_links {
+.front_bottom {
 	margin: 0% auto 10% auto;
 	text-align: center;
+}
+
+ul.internal_links {
+	margin: 0;
 	word-spacing: 10em;
 }
+	@media only screen and (min-width: 576px) {
+		ul.internal_links {
+			word-spacing: 3em;
+		}
+	}
+	@media only screen and (min-width: 768px) {
+		ul.internal_links {
+			word-spacing: 5em;
+		}
+	}
+	@media only screen and (min-width: 992px) {
+		ul.internal_links {
+			word-spacing: 10em;
+		}
+	}
+	@media only screen and (min-width: 1200px) {
+		ul.internal_links {
+			word-spacing: 10em;
+		}
+	}
+
 	ul.internal_links li {
-		display: inline-block;
 		font-size: 1.6em;
 		letter-spacing: 0.05em;
 	}
+		@media only screen and (max-width: 575px) {
+			ul.internal_links li {
+				display: inherit;
+				line-height: 1.5em;
+			}
+		}
+		@media only screen and (min-width: 576px) {
+			ul.internal_links li {
+				display: inherit;
+				line-height: 1.5em;
+			}
+		}
+		@media only screen and (min-width: 768px) {
+			ul.internal_links li {
+				display: inline-block;
+			}
+		}
+		@media only screen and (min-width: 992px) {
+			ul.internal_links li {
+				display: inline-block;
+			}
+		}
+		@media only screen and (min-width: 1200px) {
+			ul.internal_links li {
+				display: inline-block;
+			}
+		}
 
 /*----- about me styling -----*/
 .about.text {
