@@ -7,7 +7,7 @@ General Style
 	scroll-behavior: smooth;
 }
 body {
-	background: #fff;
+	background: white;
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
 	-webkit-font-smoothing: antialiased;
@@ -58,6 +58,8 @@ a:hover {
 /*
 Specific Style
 --------------------------------------------------------------------------------
+For media support, I used the following breakpoints (inspired by Bootstrap):
+	- min-width: 576px, 768px, 992px, 1200px
 */
 
 .container {
@@ -76,20 +78,10 @@ ul.contact {
 	}
 
 .name {
+	margin: 35% auto 0% auto;
+	width: 100%;
 	letter-spacing: 0.08em;
 }
-	@media only screen and (max-width: 575px) {
-		.name {
-			margin: 35% auto 0% auto;
-			width: 100%;
-		}
-	}
-	@media only screen and (min-width: 576px) {
-		.name {
-			margin: 35% auto 0% auto;
-			width: 100%;
-		}
-	}
 	@media only screen and (min-width: 768px) {
 		.name {
 			margin: 16% auto 0% auto;
@@ -113,19 +105,9 @@ ul.contact {
 	text-align:left;
 	line-height: 1.5em;
 	font-size: 1.33em;
+	margin: 0.5em auto 40% auto;
+	width: 100%;
 }
-	@media only screen and (max-width: 575px) {
-		.title {
-			margin: 0.5em auto 40% auto;
-			width: 100%;
-		}
-	}
-	@media only screen and (min-width: 576px) {
-		.title {
-			margin: 0.5em auto 40% auto;
-			width: 100%;
-		}
-	}
 	@media only screen and (min-width: 768px) {
 		.title {
 			margin: 0.5em auto 25% auto;
@@ -149,7 +131,7 @@ ul.contact {
 	margin: 0 0 10% 0;
 	text-align: center;
 }
-	@media only screen and (max-width: 767px) {
+	@media only screen and (max-width: 768px) {
 		.front_bottom {
 			display: none;
 		}
@@ -222,29 +204,10 @@ ul.internal_links {
 }
 
 #me {
+	display: none;
 	padding: 5%;
 }
-	@media only screen and (max-width: 575px) {
-		#me {
-			display: none;
-		}
-	}
-	@media only screen and (min-width: 576px) {
-		#me {
-			display: none;
-		}
-	}
-	@media only screen and (min-width: 768px) {
-		#me {
-			display: none;
-		}
-	}
 	@media only screen and (min-width: 992px) {
-		#me {
-			display: inline;
-		}
-	}
-	@media only screen and (min-width: 1200px) {
 		#me {
 			display: inline;
 		}
@@ -257,36 +220,49 @@ ul.internal_links {
 	height: 450px;
 	padding: 5% 0% 0% 0%;
 }
-
-.project.text {
-	transition: all 0.5s ease;
-	width: 40%;
-	line-height: 1.5em;
-}
-	.project.text:hover {
-		color: rgba(256, 156, 0, 0.7);
+	@media only screen and (max-width: 576px) {
+		.container.project {
+			height: 300px;
+		}
 	}
 
-.project.img>.image {
-	display: inline;
+.project_card:hover *{
+	color: rgba(256, 156, 0, 0.7);
 	transition: all 0.5s ease;
-	width: 50%;
+	opacity: 0.7;
+}
+
+.project_card>img {
+	display: inline;
 	height: auto;
 }
-	.container.project>a:hover .image {
-		opacity: 0.5;
+	@media only screen and (max-width: 576px) {
+		.project_card>img {
+			display: none;
+		}
 	}
-
-.project.text>h2 {
-	transition: all 0.5s ease;
-}
-.container.project>a:hover .project.text>h2{
-	color: rgba(256, 156, 0, 0.7);
-}
+	@media only screen and (min-width: 576px) {
+		.project_card>img {
+			margin: 5% 0 5% 15%;
+			width: 35%;
+		}
+	}
+	@media only screen and (min-width: 768px) {
+		.project_card>img {
+			margin: 3% 0 5% 15%;
+			width: 40%;
+		}
+	}
+	@media only screen and (min-width: 992px) {
+		.project_card>img {
+			margin: 2% 0 5% 15%;
+			width: 45%;
+		}
+	}
 
 hr.short {
 	margin: 0;
-	width: 15%;
+	width: 8%;
 }
 
 /*----- experience styling -----*/
