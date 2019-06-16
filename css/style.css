@@ -258,35 +258,22 @@ ul.internal_links {
 	padding: 5% 0% 0% 0%;
 }
 
-.project.text {
-	transition: all 0.5s ease;
-	width: 40%;
-	line-height: 1.5em;
-}
-	.project.text:hover {
-		color: rgba(256, 156, 0, 0.7);
-	}
-
-.project.img>.image {
-	display: inline;
-	transition: all 0.5s ease;
-	width: 50%;
-	height: auto;
-}
-	.container.project>a:hover .image {
-		opacity: 0.5;
-	}
-
-.project.text>h2 {
-	transition: all 0.5s ease;
-}
-.container.project>a:hover .project.text>h2{
+.container.project>a:hover *{
 	color: rgba(256, 156, 0, 0.7);
+	transition: all 0.5s ease;
+	opacity: 0.9;
+}
+
+.container.project>a>img {
+	display: inline;
+	width: 45%;
+	height: auto;
+	margin: 2% 0 0 15%;
 }
 
 hr.short {
 	margin: 0;
-	width: 15%;
+	width: 8%;
 }
 
 /*----- experience styling -----*/
