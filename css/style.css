@@ -2,6 +2,7 @@
 General Style
 --------------------------------------------------------------------------------
 */
+
 * {
 	scroll-behavior: smooth;
 }
@@ -19,6 +20,7 @@ body {
 Typography
 --------------------------------------------------------------------------------
 */
+
 h1 {
 	font-size: 2em;
 }
@@ -43,6 +45,7 @@ ul {
 Links
 --------------------------------------------------------------------------------
 */
+
 a {
 	color: rgba(0, 0, 0, 0.7);
 	font-style: normal;
@@ -73,79 +76,107 @@ ul.contact {
 	}
 
 .name {
-	margin: 16% auto 0% auto;
 	letter-spacing: 0.08em;
 }
+	@media only screen and (max-width: 575px) {
+		.name {
+			margin: 35% auto 0% auto;
+			width: 100%;
+		}
+	}
 	@media only screen and (min-width: 576px) {
 		.name {
-			width: 90%;
+			margin: 35% auto 0% auto;
+			width: 100%;
 		}
 	}
 	@media only screen and (min-width: 768px) {
 		.name {
-			width: 70%;
+			margin: 16% auto 0% auto;
+			width: 56%;
 		}
 	}
 	@media only screen and (min-width: 992px) {
 		.name {
-			width: 50%;
+			margin: 16% auto 0% auto;
+			width: 44%;
 		}
 	}
 	@media only screen and (min-width: 1200px) {
 		.name {
+			margin: 16% auto 0% auto;
 			width: 36%;
 		}
 	}
 
 .title {
-	margin: 0.5em auto 25% auto;
 	text-align:left;
 	line-height: 1.5em;
 	font-size: 1.33em;
 }
+	@media only screen and (max-width: 575px) {
+		.title {
+			margin: 0.5em auto 40% auto;
+			width: 100%;
+		}
+	}
 	@media only screen and (min-width: 576px) {
 		.title {
-			width: 90%;
+			margin: 0.5em auto 40% auto;
+			width: 100%;
 		}
 	}
 	@media only screen and (min-width: 768px) {
 		.title {
-			width: 70%;
+			margin: 0.5em auto 25% auto;
+			width: 56%;
 		}
 	}
 	@media only screen and (min-width: 992px) {
 		.title {
-			width: 50%;
+			margin: 0.5em auto 25% auto;
+			width: 44%;
 		}
 	}
 	@media only screen and (min-width: 1200px) {
 		.title {
+			margin: 0.5em auto 25% auto;
 			width: 36%;
 		}
 	}
 
 .front_bottom {
-	margin: 0% auto 10% auto;
+	margin: 0 0 10% 0;
 	text-align: center;
 }
+	@media only screen and (max-width: 767px) {
+		.front_bottom {
+			display: none;
+		}
+	}
 
 ul.internal_links {
 	margin: 0;
-	word-spacing: 10em;
+	padding: 0;
 }
+	@media only screen and (max-width: 575px) {
+		ul.internal_links {
+			word-spacing: 2em;
+		}
+	}
 	@media only screen and (min-width: 576px) {
 		ul.internal_links {
-			word-spacing: 3em;
+			word-spacing: 3.5em;
 		}
 	}
 	@media only screen and (min-width: 768px) {
 		ul.internal_links {
-			word-spacing: 5em;
+			word-spacing: 8em;
 		}
 	}
 	@media only screen and (min-width: 992px) {
 		ul.internal_links {
-			word-spacing: 10em;
+			word-spacing: 8.2em;
 		}
 	}
 	@media only screen and (min-width: 1200px) {
@@ -155,59 +186,77 @@ ul.internal_links {
 	}
 
 	ul.internal_links li {
-		font-size: 1.6em;
 		letter-spacing: 0.05em;
+		display: inline-block;
 	}
 		@media only screen and (max-width: 575px) {
 			ul.internal_links li {
-				display: inherit;
-				line-height: 1.5em;
+				font-size: 1.3em;
 			}
 		}
 		@media only screen and (min-width: 576px) {
 			ul.internal_links li {
-				display: inherit;
-				line-height: 1.5em;
+				font-size: 1.3em;
 			}
 		}
 		@media only screen and (min-width: 768px) {
 			ul.internal_links li {
-				display: inline-block;
+				font-size: 1.3em;
 			}
 		}
 		@media only screen and (min-width: 992px) {
-			ul.internal_links li {
-				display: inline-block;
+			ul.internal_links {
+				font-size: 1.3em;
 			}
 		}
 		@media only screen and (min-width: 1200px) {
-			ul.internal_links li {
-				display: inline-block;
+			ul.internal_links {
+				font-size: 1.3em;
 			}
 		}
 
 /*----- about me styling -----*/
+
 .about.text {
-	width: 50%;
 	line-height: 1.5em;
 }
-.about.img {
-	padding: 5% 0;
-	float: right;
-	width: 450px;
+
+#me {
+	padding: 5%;
 }
+	@media only screen and (max-width: 575px) {
+		#me {
+			display: none;
+		}
+	}
+	@media only screen and (min-width: 576px) {
+		#me {
+			display: none;
+		}
+	}
+	@media only screen and (min-width: 768px) {
+		#me {
+			display: none;
+		}
+	}
+	@media only screen and (min-width: 992px) {
+		#me {
+			display: inline;
+		}
+	}
+	@media only screen and (min-width: 1200px) {
+		#me {
+			display: inline;
+		}
+	}
 
 /*----- project styling -----*/
+
 .container.project {
 	width: 100%;
 	height: 450px;
 	padding: 5% 0% 0% 0%;
 }
-	.container.project#tilt_shift {
-		width: 100%;
-		height: 450px;
-		padding: 5% 0 0% 0;
-	}
 
 .project.text {
 	transition: all 0.5s ease;
@@ -219,11 +268,10 @@ ul.internal_links {
 	}
 
 .project.img>.image {
-	opacity: 1;
-	display: block;
+	display: inline;
 	transition: all 0.5s ease;
-	backface-visibility: hidden;
-	float: right;
+	width: 50%;
+	height: auto;
 }
 	.container.project>a:hover .image {
 		opacity: 0.5;
@@ -242,13 +290,13 @@ hr.short {
 }
 
 /*----- experience styling -----*/
-.container.experience>a {
-	font-size: 1.33em;
-	color: rgba(0, 0, 0, 1);
-}
-.experience.text {
+
+#resume {
 	margin: 5% auto;
-	font-size: 1.0em;
-	color: black;
-	text-align: left;
+	font-size: 0.9em;
+	color: rgba(0, 0, 0, 0.7);
+	font-weight: normal;
 }
+	#resume:hover {
+		color: rgba(256, 156, 0, 0.7);
+	}
