@@ -149,6 +149,11 @@ ul.contact {
 	margin: 0 0 10% 0;
 	text-align: center;
 }
+	@media only screen and (max-width: 767px) {
+		.front_bottom {
+			display: none;
+		}
+	}
 
 ul.internal_links {
 	margin: 0;
@@ -263,11 +268,10 @@ ul.internal_links {
 	}
 
 .project.img>.image {
-	opacity: 1;
-	display: block;
+	display: inline;
 	transition: all 0.5s ease;
-	backface-visibility: hidden;
-	float: right;
+	width: 50%;
+	height: auto;
 }
 	.container.project>a:hover .image {
 		opacity: 0.5;
@@ -287,9 +291,12 @@ hr.short {
 
 /*----- experience styling -----*/
 
-.experience.text {
+#resume {
 	margin: 5% auto;
-	font-size: 1.0em;
-	color: black;
-	text-align: left;
+	font-size: 0.9em;
+	color: rgba(0, 0, 0, 0.7);
+	font-weight: normal;
 }
+	#resume:hover {
+		color: rgba(256, 156, 0, 0.7);
+	}
