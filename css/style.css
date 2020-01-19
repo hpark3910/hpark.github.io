@@ -197,6 +197,13 @@ ul.internal_links {
 			}
 		}
 
+/*----- sidebar styling -----*/
+.sidebar {
+	position: fixed;
+	left: 5%;
+	bottom: 10%;
+}
+
 /*----- about me styling -----*/
 
 .about.text {

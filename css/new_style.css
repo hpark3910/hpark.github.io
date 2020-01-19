@@ -1,0 +1,438 @@
+/*
+General Styling
+--------------------------------------------------------------------------------
+*/
+
+* {
+	scroll-behavior: smooth;
+}
+body {
+	background: #fff;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	-webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: 100%;
+    margin: 0;
+}
+
+.container {
+}
+	@media (max-width: 576px) {
+		.container {
+			margin: 0 40px;
+		}
+	}
+	@media (min-width: 576px) {
+		.container {
+			margin: 0 70px;
+		}
+	}
+	@media (min-width: 768px) {
+		.container {
+			margin: 0 100px;
+		}
+	}
+	@media (min-width: 992px) {
+		.container {
+			margin: 0 150px;
+		}
+	}
+
+section {
+	margin: 0;
+}
+
+footer p{
+	font-size: 0.89em;
+	margin: 3em 0;
+	padding: 0 0 0 4em;
+	text-align: left;
+}
+	@media (max-width: 1024px) {
+		footer p {
+			padding: 0;
+			text-align: center;
+		}
+	}
+
+/*
+Typography
+--------------------------------------------------------------------------------
+*/
+
+h1 {
+	font-size: 2em;
+}
+h2 {
+	font-size: 1.5em;
+	color: rgba(0, 0, 0, 1);
+	letter-spacing: 0.05em;
+}
+h3 {
+	font-size: 1.33em;
+}
+hr {
+  border: solid rgba(0, 0, 0, 0.2);
+  border-width: 1px 0 0;
+  height: 0;
+}
+ul {
+	list-style: none;
+}
+
+/*
+Links
+--------------------------------------------------------------------------------
+*/
+
+a {
+	color: rgba(0, 0, 0, 0.7);
+	font-style: normal;
+	text-decoration: none;
+}
+a:hover {
+	color: rgba(256, 156, 0, 0.7);
+}
+
+/*
+Main Header Styling
+--------------------------------------------------------------------------------
+*/
+
+#main-header {
+	top: 0;
+	background-color: #fff;
+	z-index: 1;
+	height: 80px;
+}
+	@media (max-width: 576px) {
+		#main-header {
+			height: 60px;
+			padding: 0 40px;
+			width: calc(100vw - 80px);
+		}
+	}
+	@media (min-width: 576px) {
+		#main-header {
+			padding: 0 70px;
+			width: calc(100vw - 140px);
+		}
+	}
+	@media (min-width: 768px) {
+		#main-header {
+			position: fixed;
+			padding: 0 100px;
+			width: calc(100vw - 200px);
+		}
+	}
+	@media (min-width: 992px) {
+		#main-header {
+			padding: 0 150px;
+			width: calc(100vw - 300px);
+		}
+	}
+
+#main-header img {
+	position: relative;
+}
+	@media (max-width: 576px) {
+		#main-header img {
+			top: 15px;
+		}
+	}
+	@media (min-width: 576px) {
+		#main-header img {
+			top: 25px;
+		}
+	}
+
+#main-header span {
+	position: relative;
+	top: 20px;
+	font-size: 1.33em;
+	color: #555;
+	left: 25px;
+}
+	@media (max-width: 767px) {
+		#main-header span {
+			display: none;
+		}
+	}
+
+#nav-bar {
+	display: inline;
+	position: relative;
+	float: right;
+	top: 30px;
+	right: 0px;
+	text-align: right;
+}
+
+#main-header ul {
+	display: inline;
+}
+
+#main-header li {
+	display: inline;
+	padding: 0 0 0 3em;
+}
+
+
+#main-header a {
+	font-size: 19px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	color: #555;
+}
+	@media (max-width: 991px) {
+		#main-header a {
+			display: none;
+		}
+	}
+
+#main-header a:hover {
+	color: #000;
+	transition: ease-in-out 0.3s;
+}
+
+/*
+Sidebar Styling
+--------------------------------------------------------------------------------
+*/
+
+
+#sidebar {
+	position: fixed;
+	bottom: 20%;
+	background-color: #fff;
+	z-index: 1;
+	height: 80px;
+	display: none;
+}
+	@media (max-width: 576px) {
+		#sidebar {
+			margin: 0 10px;
+		}
+	}
+	@media (min-width: 576px) {
+		#sidebar {
+			margin: 0 25px;
+		}
+	}
+	@media (min-width: 768px) {
+		#sidebar {
+			margin: 0 40px;
+			display: block;
+		}
+	}
+	@media (min-width: 992px) {
+		#sidebar {
+			margin: 0 65px;
+		}
+	}
+
+#sidebar ul {
+	margin: 0;
+	padding: 0;
+}
+
+#sidebar li {
+	padding: 0 0 10px 0;
+}
+
+#sidebar a {
+	font-size: 19px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	color: #555;
+}
+	@media (max-width: 768px) {
+		#main-header a {
+			display: none;
+		}
+	}
+
+#sidebar a:hover {
+	color: #000;
+	transition: ease-in-out 0.3s;
+}
+
+#sidebar img {
+	width: 25px;
+	opacity: 1.0;
+}
+
+#sidebar img:hover {
+	width: 25px;
+	opacity: 0.5;
+}
+
+
+#vertical-line {
+	margin: 0 0 0 12px;
+	width: 10px;
+	border-left: 1px solid black;
+	height: 200px;
+}
+
+/*
+Front Page Styling
+--------------------------------------------------------------------------------
+*/
+
+#front-page {
+	height: 50vw;
+	background: url('../images/atlanta.jpg');
+	background-position: center;
+	background-size: 90vw 50vw;
+	background-repeat: no-repeat;
+	position: relative;
+	margin-top: 80px;
+	margin-bottom: 12%;
+	display: none;
+}
+	@media (max-width: 576px) {
+		#front-page {
+			margin-top: 0;
+		}
+	}
+	@media (min-width: 576px) {
+		#front-page {
+			margin-top: 0;
+		}
+	}
+	@media (min-width: 768px) {
+		#front-page {
+			margin-top: 80px;
+			display: block;
+		}
+	}
+
+#title {
+	font-family: 'Cormorant Garamond', serif;
+	color: #fff;
+	position: absolute;
+	bottom: 18%;
+	left: 15%;
+	text-align: left;
+	width: 50%;
+	letter-spacing: 0.06em;
+}
+	@media (max-width: 576px) {
+		#title {
+			font-size: 20px;
+		}
+	}
+	@media (min-width: 576px) {
+		#title {
+			font-size: 25px;
+		}
+	}
+	@media (min-width: 768px) {
+		#title {
+			font-size: 30px;
+		}
+	}
+	@media (min-width: 992px) {
+		#title {
+			font-size: 45px;
+		}
+	}
+	@media (min-width: 1280px) {
+		#title {
+			font-size: 60px;
+		}
+	}
+
+#pc {
+	margin: 0;
+	position: absolute;
+	bottom: 0% ;
+	right: 0%;
+	text-align: right ;
+	color: #fff;
+}
+	@media (max-width: 576px) {
+		#pc {
+			font-size: 5px;
+			padding: 2.5px;
+		}
+	}
+	@media (min-width: 576px) {
+		#pc {
+			font-size: 6px;
+			padding: 4px;
+		}
+	}
+	@media (min-width: 768px) {
+		#pc {
+			font-size: 8px;
+			padding: 4px;
+		}
+	@media (min-width: 992px) {
+		#pc {
+			font-size: 10px;
+			padding: 5px;
+		}
+	}
+	@media (min-width: 1280px) {
+		#pc {
+			font-size: 12px;
+			padding: 6px;
+		}
+	}
+
+/*
+Project Section Styling
+--------------------------------------------------------------------------------
+*/
+
+.project-card {
+	height: 25vw;
+	padding: 0 10%;
+	margin: 10% 0;
+}
+	@media only screen and (max-width: 576px) {
+		.project-card {
+			height: 300px;
+		}
+	}
+
+.project-card:hover *{
+	color: rgba(256, 156, 0, 0.7);
+	transition: all 0.5s ease;
+	opacity: 0.7;
+}
+
+.project_card>img {
+	display: inline;
+	height: auto;
+}
+	@media only screen and (max-width: 576px) {
+		.project_card>img {
+			display: none;
+		}
+	}
+	@media only screen and (min-width: 576px) {
+		.project_card>img {
+			margin: 5% 0 5% 15%;
+			width: 35%;
+		}
+	}
+	@media only screen and (min-width: 768px) {
+		.project_card>img {
+			margin: 3% 0 5% 15%;
+			width: 40%;
+		}
+	}
+	@media only screen and (min-width: 992px) {
+		.project_card>img {
+			margin: 2% 0 5% 15%;
+			width: 45%;
+		}
+	}
+
+hr.short {
+	margin: 0;
+	width: 8%;
+}
