@@ -1,0 +1,36 @@
+/* Global config */
+
+
+/* Responsive design */
+@mixin mobile {
+    @media (max-width: 568px) {
+        @content;
+    }
+}
+
+@mixin tablet {
+    @media (max-width: 968px) {
+        @content;
+    }
+}
+
+/* Color scheme */
+$colors: (
+    background: #fff,
+    primary-text: #000,
+    secondary-text: #555
+);
+
+@function color($type) {
+    @return map-get($map: $colors, $key: $type)
+};
+
+/* Font */
+$fonts: (
+    primary: ('Roboto', sans-serif),
+    secondary: ('Cormorant Garamond', serif)
+);
+
+@function font($type) {
+    @return map-get($map: $fonts, $key: $type)
+};

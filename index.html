@@ -12,7 +12,7 @@
 	<meta name="viewport" content="width=device-width">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
-	<link href="css/new_style.css" type="text/css" rel="stylesheet">
+	<link href="css/style.css" type="text/css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 </head>
 
@@ -20,6 +20,7 @@
 
 <!-- the main page -->
 <body>
+	<!-- main header -->
 	<!-- main header -->
 	<header id="main-header">
 		<img src="images/logo.png" alt="logo" width="50" height="30">
@@ -29,7 +30,7 @@
 			<ul>
 				<li><a href="#">Home</a></li>
 				<li><a href="about.html">About</a></li>
-				<li><a href="#">Experience</a></li>
+				<li><a href="files/resume.pdf">Experience</a></li>
 			</ul>
 		</nav>
 	</header>
@@ -48,7 +49,6 @@
 	<section>
 		<div class="container" id="front-page">
 			<p id="title">Researcher & <br>Programmer</p>
-			<p id="pc">Photo by Stephen Cook on Unsplash</p>
 		</div>
 	</section>
 	
@@ -60,6 +60,22 @@
 			<div></div>
 		</div>
 		<div class="container">
+			<div class="project-card">
+				<a class="project_card" href="https://github.com/hpark95/movie-finder" target="_blank">
+					<img src="images/movie.png" class="image" alt="movie image" width="540" height="360" align="right">
+					<h2>Movie Finder</h2>
+					<hr class="short"/>
+					<p>android development, clean architecture, java</p>
+				</a>
+			</div>
+			<div class="project-card">
+				<a class="project_card" href="https://github.com/hpark95/fine-grained-sentiment-analysis-with-bert" target="_blank">
+					<img src="images/sentiment.png" class="image" alt="sentiment image" width="540" height="360" align="right">
+					<h2>Fine-grained Sentiment Analysis</h2>
+					<hr class="short"/>
+					<p>deep learning, natural language processing, pytorch</p>
+				</a>
+			</div>
 			<div class="project-card">
 				<a class="project_card" href="https://github.com/hpark95/snake-species-identification" target="_blank">
 					<img src="images/snake.png" class="image" alt="snake image" width="540" height="360" align="right">
@@ -82,14 +98,6 @@
 					<h2>Kaggle Competition Top 8%</h2>
 					<hr class="short"/>
 					<p>machine learning, data cleaning, feature engineering, model selection, model stacking</p>
-				</a>
-			</div>
-			<div class="project-card">
-				<a class="project_card" href="https://github.com/hpark95/fake-miniature" target="_blank">
-					<img src="images/stadium_out.jpg" class="image" alt="miniature faking of a stadium image" width="540" height="360" align="right">
-					<h2>Miniature Faking</h2>
-					<hr class="short"/>
-					<p>computational photography, image processing</p>
 				</a>
 			</div>
 		</div>

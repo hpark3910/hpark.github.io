@@ -1,3 +1,7 @@
+@import 'config';
+@import 'abstract';
+
+
 /*
 General Styling
 --------------------------------------------------------------------------------
@@ -6,225 +10,110 @@ General Styling
 * {
 	scroll-behavior: smooth;
 }
+
 body {
-	background: #fff;
-	font-family: 'Roboto', sans-serif;
-	font-size: 16px;
-	-webkit-font-smoothing: antialiased;
-    -webkit-text-size-adjust: 100%;
-    margin: 0;
+    @extend %zero;
+	background-color: color('background');
+	font-family: font('primary');
+	font-size: 1rem;
 }
 
 .container {
-	margin: 0 10vw;
+    @extend %zero;
+    margin: 0 10vw;
 }
 
 section {
-	margin: 0;
+	@extend %zero;
 }
 
-footer p{
-	font-size: 0.89em;
-	margin: 3em 0;
-	padding: 0 0 0 4em;
-	text-align: left;
-}
-	@media (max-width: 1024px) {
-		footer p {
-			padding: 0;
-			text-align: center;
-		}
-	}
-
-/*
-Typography
---------------------------------------------------------------------------------
-*/
-
-h1 {
-	font-size: 2em;
-}
-h2 {
-	font-size: 1.5em;
-	color: rgba(0, 0, 0, 1);
-	letter-spacing: 0.05em;
-}
-h3 {
-	font-size: 1.33em;
-}
-hr {
-  border: solid rgba(0, 0, 0, 0.2);
-  border-width: 1px 0 0;
-  height: 0;
-}
 ul {
-	list-style: none;
+    list-style: none;
 }
-
-/*
-Links
---------------------------------------------------------------------------------
-*/
 
 a {
-	color: rgba(0, 0, 0, 0.7);
-	font-style: normal;
-	text-decoration: none;
-}
-a:hover {
-	color: rgba(256, 156, 0, 0.7);
-}
-
-/*
-Main Header Styling
---------------------------------------------------------------------------------
-*/
-
-#main-header {
-	top: 0;
-	background-color: #fff;
-	z-index: 1;
-	height: 80px;
-	width: 80vw;
-	padding: 0 10vw;
-}
-	@media (max-width: 576px) {
-		#main-header {
-			height: 60px;
-		}
-	}
-	@media (min-width: 768px) {
-		#main-header {
-			position: fixed;
-		}
-	}
-
-#main-header img {
-	position: relative;
-}
-	@media (max-width: 576px) {
-		#main-header img {
-			top: 15px;
-		}
-	}
-	@media (min-width: 576px) {
-		#main-header img {
-			top: 25px;
-		}
-	}
-
-#main-header span {
-	position: relative;
-	top: 20px;
-	font-size: 1.33em;
-	color: #555;
-	left: 25px;
-}
-	@media (max-width: 767px) {
-		#main-header span {
-			display: none;
-		}
-	}
-
-#nav-bar {
-	display: inline;
-	position: relative;
-	float: right;
-	top: 30px;
-	right: 0px;
-	text-align: right;
-}
-
-#main-header ul {
-	display: inline;
-}
-
-#main-header li {
-	display: inline;
-	padding: 0 0 0 3em;
-}
-
-
-#main-header a {
-	font-size: 19px;
-	font-weight: 400;
-	letter-spacing: 1px;
-	color: #555;
-}
-	@media (max-width: 991px) {
-		#main-header a {
-			display: none;
-		}
-	}
-
-#main-header a:hover {
-	color: #000;
-	transition: ease-in-out 0.3s;
+    text-decoration: none;
+    color: color('secondary-text');
+    &:hover {
+        color: color('primary-text');
+        transition: 300ms ease;
+    }
 }
 
 /*
-Sidebar Styling
+Header Styling
 --------------------------------------------------------------------------------
 */
 
+header {
+    @extend %fixedElement, %zero, %flexCenter;
+    top: 0;
+    justify-content: space-between;
+    height: 6vh;
+    // max-height: 80px;
+    width: 80vw;
+    padding: 0 10vw;
+    font-size: 1.2rem;
+    letter-spacing: 0.05rem;
+    color: color('secondary-text');
+
+    #logo {
+        @extend %flexCenter;
+
+        img {
+            padding-right: 1rem;
+        }
+    }
+
+    ul {
+        @extend %zero;
+        list-style: none;
+    }
+
+    li {
+        display: inline;
+        padding-left: 2rem;
+    }
+}
+
+/*
+Sidbar Styling
+--------------------------------------------------------------------------------
+*/
 
 #sidebar {
-	position: fixed;
-	bottom: 0;
-	background-color: #fff;
-	z-index: 1;
-	height: 320px;
-	display: none;
-	padding-left: calc(5vw - 12.5px);
-}
-	@media (min-width: 768px) {
-		#sidebar {
-			display: block;
-		}
-	}
+    @extend %fixedElement, %zero;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 10vw;
+    height: 35vh;
+    bottom:0;
+    left: 0;
 
-#sidebar ul {
-	margin: 0;
-	padding: 0;
-}
-
-#sidebar li {
-	padding: 0 0 10px 0;
-}
-
-#sidebar a {
-	font-size: 19px;
-	font-weight: 400;
-	letter-spacing: 1px;
-	color: #555;
-}
-	@media (max-width: 768px) {
-		#main-header a {
-			display: none;
-		}
-	}
-
-#sidebar a:hover {
-	color: #000;
-	transition: ease-in-out 0.3s;
-}
-
-#sidebar img {
-	width: 25px;
-	opacity: 1.0;
-}
-
-#sidebar img:hover {
-	width: 25px;
-	opacity: 0.5;
-}
+    ul {
+        @extend %zero;
+        width: 100%;
 
 
-#vertical-line {
-	margin: 0 0 0 12px;
-	width: 10px;
-	border-left: 1px solid black;
-	height: 200px;
+        li {
+            @extend %zero;
+            text-align: center;
+            padding-bottom: 0.5rem;
+        }
+    }
+
+    img {
+        width: 1.67rem;
+        opacity: 1.0;
+    }
+
+    #vertical-line {
+        @extend %zero;
+        width: 50%;
+        height: calc(35vh - 9rem);
+        border-right: solid 1px;
+    }
 }
 
 /*
@@ -233,107 +122,29 @@ Front Page Styling
 */
 
 #front-page {
-	height: 50vw;
+    height: 50vw;
 	background: url('../images/atlanta.jpg');
-	background-position: center;
+    background-position: cover/center;
 	background-size: 90vw 50vw;
-	background-repeat: no-repeat;
-	position: relative;
-	margin-top: 80px;
-	margin-bottom: 10vw;
-	display: none;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-top: 6vh;
+    margin-bottom: 10vw;
+    
+    p {
+        @extend %zero;
+        font-size: 3rem;
+        font-family: font('secondary');
+        color: color('background');
+        position:absolute;
+        bottom: 22%;
+        left: 15%;
+        text-align: left;
+        width: 50%;
+        letter-spacing: 0.3rem;
+        line-height: 1.3;
+    }
 }
-	@media (max-width: 576px) {
-		#front-page {
-			margin-top: 0;
-		}
-	}
-	@media (min-width: 576px) {
-		#front-page {
-			margin-top: 0;
-		}
-	}
-	@media (min-width: 768px) {
-		#front-page {
-			margin-top: 80px;
-			display: block;
-		}
-	}
-
-#title {
-	font-family: 'Cormorant Garamond', serif;
-	color: #fff;
-	position: absolute;
-	bottom: 18%;
-	left: 15%;
-	text-align: left;
-	width: 50%;
-	letter-spacing: 0.06em;
-}
-	@media (max-width: 576px) {
-		#title {
-			font-size: 20px;
-		}
-	}
-	@media (min-width: 576px) {
-		#title {
-			font-size: 25px;
-		}
-	}
-	@media (min-width: 768px) {
-		#title {
-			font-size: 30px;
-		}
-	}
-	@media (min-width: 992px) {
-		#title {
-			font-size: 45px;
-		}
-	}
-	@media (min-width: 1280px) {
-		#title {
-			font-size: 60px;
-		}
-	}
-
-#pc {
-	margin: 0;
-	position: absolute;
-	bottom: 0% ;
-	right: 0%;
-	text-align: right ;
-	color: #fff;
-}
-	@media (max-width: 576px) {
-		#pc {
-			font-size: 5px;
-			padding: 2.5px;
-		}
-	}
-	@media (min-width: 576px) {
-		#pc {
-			font-size: 6px;
-			padding: 4px;
-		}
-	}
-	@media (min-width: 768px) {
-		#pc {
-			font-size: 8px;
-			padding: 4px;
-		}
-	}
-	@media (min-width: 992px) {
-		#pc {
-			font-size: 10px;
-			padding: 5px;
-		}
-	}
-	@media (min-width: 1280px) {
-		#pc {
-			font-size: 12px;
-			padding: 6px;
-		}
-	}
 
 /*
 Project Section Styling
@@ -347,7 +158,16 @@ Project Section Styling
 	font-weight: lighter;
 	letter-spacing: 0.05em;
 	grid-template-columns: 1fr auto 1fr;
-	grid-gap: 1em;
+    grid-gap: 1em;
+
+    div {
+        height: 50%;
+        border-bottom: #ccc solid 1px;
+    }
+
+    p {
+        @extend %zero;
+    }
 }
 	@media (max-width: 576px) {
 		#project-header {
@@ -376,19 +196,16 @@ Project Section Styling
 		}
 	}
 
-#project-header div {
-	height: 50%;
-	border-bottom: rgba(0, 0, 0, 0.2) solid 1px;
-}
-
-#project-header p {
-	margin: 0;
-}
-
 .project-card {
 	padding: 0 10%;
 	margin: 10vw 0;
-	position: relative;
+    position: relative;
+    
+    &:hover *{
+        color: color('secondary-text');
+        transition: all 0.5s ease;
+        opacity: 0.7;
+    }
 }
 	@media only screen and (max-width: 576px) {
 		.project-card {
@@ -415,11 +232,6 @@ Project Section Styling
 		}
 	}
 
-.project-card:hover *{
-	color: #333;
-	transition: all 0.5s ease;
-	opacity: 0.7;
-}
 
 .project_card img {
 	display: inline;

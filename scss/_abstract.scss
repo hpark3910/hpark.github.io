@@ -1,0 +1,17 @@
+/* Collection of abstract classes */
+%fixedElement {
+    position: fixed;
+    z-index: 1;
+    background-color: color('background');
+};
+
+%zero {
+    margin: 0;
+    padding: 0;
+};
+
+%flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+};
